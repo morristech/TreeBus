@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indigo"
+    android:padding="4dp"
+    app:columnCount="2"
+    app:rowCount="4">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Parent fragment"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        tools:ignore="HardcodedText"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_columnWeight="1">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="me.dmdev.treebus.demo.ui.children.FirstFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        tools:layout="@layout/fragment_child"/>
+
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="me.dmdev.treebus.demo.ui.children.SecondFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        tools:layout="@layout/fragment_child"/>
+
+    <fragment
+        android:id="@+id/third_fragment"
+        android:name="me.dmdev.treebus.demo.ui.children.PaintActivityFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        tools:layout="@layout/fragment_child"/>
+
+    <fragment
+        android:id="@+id/fourth_fragment"
+        android:name="me.dmdev.treebus.demo.ui.children.PaintParentFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        tools:layout="@layout/fragment_child"/>
+
+    <fragment
+        android:id="@+id/fifth_fragment"
+        android:name="me.dmdev.treebus.demo.ui.children.PaintAllChildrenFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        tools:layout="@layout/fragment_child"/>
+
+    <fragment
+        android:id="@+id/sixth_fragment"
+        android:name="me.dmdev.treebus.demo.ui.children.PaintAllFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        tools:layout="@layout/fragment_child"/>
+
+</android.support.v7.widget.GridLayout>
